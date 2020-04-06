@@ -1,16 +1,8 @@
-# animated_tab_bar
+# SpotLightTabBar
+## A custom tabbar for Flutter.
 
-A new Flutter project.
+Inspired by a [design](https://www.behance.net/gallery/94842819/Animated-Tab-Bar) by [Sanchita Agrawal](https://www.behance.net/sanchitaagrawal26).
 
-## Getting Started
+Created for [this challenge](https://www.linkedin.com/posts/flutterfly-5726b6189_uiux-animation-design-activity-6652282850013995008-NsLx/).
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Use it as a replacement for your regular tabbar.
