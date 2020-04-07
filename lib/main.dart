@@ -8,7 +8,6 @@ const kMainColor = Color.fromARGB(255, 123, 121, 123);
 const kMainBackColor = Color.fromARGB(255, 60, 58, 60);
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -42,17 +41,25 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         backgroundColor: kMainBackColor,
       ),
       body: Container(
-        color: kMainBackColor,
-        child: Center(
-          child: Card(
-            elevation: 5,
-            margin: EdgeInsets.symmetric(horizontal: 50),
-            child: SpotLightTabBar(
-              color: kMainBackColor,
-              controller: _tabController,
-            ),
-          ),
+        alignment: Alignment.center,
+        color: Colors.grey,
+        child: TabBarView(
+          children: [
+            Center(child: Text('Shop')),
+            Center(child: Text('Favorite')),
+            Center(child: Text('Search')),
+          ],
+          controller: _tabController,
         ),
+      ),
+      bottomNavigationBar: SpotLightTabBar(
+        controller: _tabController,
+        backgroundColor: kMainBackColor,
+        tabs: <Widget>[
+          Tab(icon: Icon(Icons.local_mall)),
+          Tab(icon: Icon(Icons.favorite_border)),
+          Tab(icon: Icon(Icons.search)),
+        ],
       ),
     );
   }
